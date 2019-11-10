@@ -5,8 +5,8 @@ eureka:
   instance:
     hostname: localhost
   client:
-    fetch-registry: false
-    register-with-eureka: false
+    fetch-registry: false #不在本地缓存注册表信息
+    register-with-eureka: false #不要通过Eureka注册自己
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
